@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="styles2.css">
+       <title>Something Old</title>
+       <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+   </head>
+
+   <header>
+    <title>Something Blue</title>
+    <link rel="stylesheet" href="styles.css">
+    <header class="header">
+        <nav class="navbar">
+          <div class="hover-title">
+            <a href="./index.html">Home</a>
+
+            <div class="hover-title">
+              <a href="./old.html">Old</a>
+            </div>
+          </div>
+
+            <div class="hover-title">
+              <a href="./new.html">New</a>
+            </div>
+          
+            <div class="hover-title">
+            <a href="./borrowed.html" class="active">Borrowed</a>
+          </div>
+          
+          <div class="hover-title">
+            <a href="./blue.html">Blue</a>
+          </div>
+
+          <div class="hover-title">
+            <a href="./submit.html">Submit</a>
+          </div>
+    </nav>
+    </header>
+
+    <body>
+
+        <div class="item item-4">Borrowed</div>
+
+        <div class="row">
+            <div class="column">
+                <p class="old"></p>
+            </div>
+            <div class="column">
+                <p class="introduction">"Something borrowed" embodies the bond of friendship and family. Traditionally, as a bride borrows items from a loved one, they carry blessings into a their new life. Click on cards to reveal the stories behind objects!</p>
+            </div>
+        </div>
+ 
+ 
+        <div class="row">
+ 
+ 
+            <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(1)">
+              <img src="redrosebox.svg" style="width:100%" onclick="openModal();currentSlide(1)">
+              <div class="container"><p>"Blossoming Rose"</p></div>
+            </div>
+            </div>
+ 
+ 
+            <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(2)">
+              <img src="bejeweledspider.svg" style="width:100%" onclick="openModal();currentSlide(2)">
+              <div class="container"><p>"Bejeweled Spicer"</p></div>
+            </div>
+            </div>
+ 
+ 
+            <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(3)">
+              <img src="pinkroses.svg" style="width:100%" onclick="openModal();currentSlide(3)">
+              <div class="container"><p>"Potted Pink Plant"</p></div>
+            </div>
+            </div>
+ 
+ 
+            <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(4)">
+              <img src="bracelet.svg" style="width:100%" onclick="openModal();currentSlide(4)">
+              <div class="container"><p>"Friendship Bracelet"</p></div>
+            </div>
+            </div>
+ 
+ 
+            <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(5)">
+                <img src="cathedral.svg" style="width:100%" onclick="openModal();currentSlide(5)">
+                <div class="container"><p>"Cologne Cathedral"</p></div>
+            </div>
+              </div>
+ 
+ 
+              <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(6)">
+                <img src="peacock.svg" style="width:100%" onclick="openModal();currentSlide(6)">
+                <div class="container"><p>"The Peacock"</p></div>
+            </div>
+              </div>
+ 
+ 
+              <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(7)">
+                <img src="ticket.svg" style="width:100%" onclick="openModal();currentSlide(7)">
+                <div class="container"><p>"Concert Ticket"</p></div>
+            </div>
+              </div>
+ 
+ 
+              <div class="column4">
+                <div class="thumbnail" onclick="openModal();currentSlide(8)">
+                <img src="redrose.svg" style="width:100%" onclick="openModal();currentSlide(8)">
+                <div class="container"><p>"Blossoming Rose"</p></div>
+            </div>
+              </div>
+ 
+ 
+          </div>
+         
+          <div id="myModal" class="modal" style="background-image: url('gallery_background.jpeg');">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+         
+              <div class="mySlides">
+                <img src="redrose.svg" style="width:100%">
+                <div class="caption-container">
+                    <p>1948 copy of "The Professor" — Lydia</p>
+                  </div>
+              </div>
+         
+              <div class="mySlides">
+                <img src="bejeweledspider.svg" style="width:100%">
+                <div class="caption-container">
+                    <p>A small ornament passed down from my Gran, containing a black cat holding a max factor perfume from the 1950s. — Lucy</p>
+                  </div>
+              </div>
+         
+              <div class="mySlides">
+                <img src="pinkroses.svg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla gravida est et rhoncus. Nulla volutpat turpis ac facilisis blandit. Phasellus diam massa, luctus nec dapibus at, iaculis at lectus. Integer pulvinar mi ante, vel pretium sem ornare sit amet. Morbi hendrerit nulla nisi, molestie molestie urna convallis sit amet. Donec dignissim ornare scelerisque.</p>
+                  </div>
+              </div>
+             
+              <div class="mySlides">
+                <img src="bracelet.svg" style="width:100%">
+                <div class="caption-container">
+                    <p>I got this newspaper as a birthday present from my friend. It dates back to 1998, the same year I was born! Even the same month, January, only 16 days earlier than I first saw this world. I love collecting music memorabilia, so whenever I hold this Melody Maker in my hands, it makes me happy! It is a special New Year's issue that also has a "Readers' Poll" where people voted for their favourite artists — who had the "haircut of the year"? (Keith Flint!) Who was "the sexiest man"? (Nicky Wire...) "Woman of the year"? (not surprisingly, Björk!) What was "the most irritating record"? ("I'm a Barbie girl, in the Barbie world...") "Best live act"? (Radiohead!) — just to name a few. It's a very fun read with a lot of familiar faces. And, well, Thom Yorke on the cover is<br>a personally special bonus (he was also voted "man of the year")! — Dominyka</p>
+                  </div>
+              </div>
+             
+              <div class="mySlides">
+                <img src="cathedral.svg" style="width: 100%">
+                <div class="caption-container">
+                    <p>Artwork of Cologne Cathedral — Victoria</p>
+                  </div>
+              </div>
+ 
+ 
+              <div class="mySlides">
+                <img src="peacock.svg" style="width:100%">
+                <div class="caption-container">
+                    <p>This lovely peacock was gifted to me for Christmas from my best friend and partner. I received this gift a few years ago and It was a great surprise because I am usually very picky with gifts. Peacocks bring good fortune and wealth to the owner and represent rebirth and beauty in many cultures. — Niki</p>
+                  </div>
+              </div>
+ 
+ 
+              <div class="mySlides">
+                <img src="./images/placeholder7.jpg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla gravida est et rhoncus. Nulla volutpat turpis ac facilisis blandit. Phasellus diam massa, luctus nec dapibus at, iaculis at lectus. Integer pulvinar mi ante, vel pretium sem ornare sit amet. Morbi hendrerit nulla nisi, molestie molestie urna convallis sit amet. Donec dignissim ornare scelerisque.</p>
+                  </div>
+              </div>
+ 
+ 
+              <div class="mySlides">
+                <img src="./images/placeholder8.jpg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla gravida est et rhoncus. Nulla volutpat turpis ac facilisis blandit. Phasellus diam massa, luctus nec dapibus at, iaculis at lectus. Integer pulvinar mi ante, vel pretium sem ornare sit amet. Morbi hendrerit nulla nisi, molestie molestie urna convallis sit amet. Donec dignissim ornare scelerisque.</p>
+                  </div>
+              </div>
+ 
+ 
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           
+  <script src="./index.js">
+ </script>
+    </body>
+
+</html>
